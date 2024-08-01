@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+header, footer {
+    background-color: rgb(219, 231, 149);
+    text-align: center;
+    padding: 30px;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    bottom: 0;
+}</style>
+<body>
+    <header>
+        <h1>My First Web Page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <article>
+            <h3>Core Content</h3>
+            <p>This is my core content.</p>
+        </article>
+    </div>
+    <footer>
+        <p>&copy; 2023 My First Web Page</p>
+    </footer>
+</body>
+</html>

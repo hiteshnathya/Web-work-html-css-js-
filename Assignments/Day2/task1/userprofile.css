@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #user-profile {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 40px auto;
+  }
+  
+  #user-profile p {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }

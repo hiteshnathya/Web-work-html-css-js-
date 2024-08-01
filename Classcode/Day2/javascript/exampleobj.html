@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Example</title>
+</head>
+<body>
+    <h1>Example obj</h1>
+    <script>
+        // Create a JavaScript object
+        var person = {
+            name: "Hitesh",
+            age: 24,
+            occupation: "Software Engineer",
+            address: {
+                city: "mumbai",
+                state: "MH",
+                zip: "12345"
+            }
+        };
+
+        // Print the object to the console
+        console.log("Person Object:");
+        console.log(person);
+
+        // Print individual properties to the console
+        console.log("Name:", person.name);
+        document.write(person.name,"<br>");
+        console.log("Age:", person.age);
+        document.write(person.age,"<br>");
+        console.log("Occupation:", person.occupation);
+        document.write(person.occupation,"<br>");
+        console.log("Address:");
+        console.log("  Street:", person.address.street);
+        document.write(person.address);
+
+        console.log("  City:", person.address.city);
+        document.write(person.address.address.city,"<br>");
+
+        console.log("  State:", person.address.state);
+        document.write(person.address.state,"<br>");
+
+        console.log("  Zip:", person.address.zip);
+        document.write(person.address.zip,"<br>");
+
+        
+    </script>
+</body>
+</html>

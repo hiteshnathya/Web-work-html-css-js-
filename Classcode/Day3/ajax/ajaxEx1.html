@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Container element for the AJAX example -->
+    <div id="f1">
+        <h2>Ajax Example</h2>
+        <!-- Button to trigger the AJAX request -->
+        <button type="button" onclick="changeContent()">Change Content</button>
+    </div>
+    <script>
+        /**
+         * Function to change the content of the #f1 element using AJAX
+         */
+        function changeContent() {
+            // Create a new XMLHttpRequest object
+            var xhttp = new XMLHttpRequest();
+            
+            // Define the callback function for the onreadystatechange event
+            xhttp.onreadystatechange = function() {
+                // Check if the request is complete and successful
+                if (this.readyState == 4 && this.status == 200) {
+                    // Update the innerHTML of the #f1 element with the response text
+                    document.getElementById("f1").innerHTML = this.responseText;
+                }
+            };
+            
+            // Open a GET request to the content.txt file
+            xhttp.open("GET", "content.txt", true);
+            
+            // Send the request
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>

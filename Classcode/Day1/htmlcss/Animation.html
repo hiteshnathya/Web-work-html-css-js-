@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Example</title>
+    <style>
+       .box {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-name: box;
+            background-color: yellow;
+            animation-duration: 0.2s;
+        }
+
+        @keyframes box {
+            from{background-color: aquamarine;}
+            to{background-color: blue;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

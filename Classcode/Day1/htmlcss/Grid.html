@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* style.css */
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Grid Styles */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+}
+.card1 {
+    background-color: #9be4ec;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+}
+.card2 {
+    background-color: #d09da8;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+}.card3 {
+    background-color: #e4a2ec;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+}.card4 {
+    background-color: #a2ebca;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+}.card5 {
+    background-color: #f38080;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+}
+.card:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+</style>
+<body>
+    <div class="wrapper">
+        <div class="card">One</div>
+        <div class="card1">One</div>
+        <div class="card2">Two</div>
+        <div class="card3">Three</div>
+        <div class="card4">Four</div>
+        <div class="card5">Five</div>
+    </div>
+</body>
+</html>

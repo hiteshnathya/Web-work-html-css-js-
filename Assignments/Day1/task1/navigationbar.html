@@ -1,0 +1,73 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* styles.css */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+nav a.active {
+    color: #fff;
+    background-color: #555;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+    margin-top: 0;
+}
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1>Welcome to the Home Section</h1>
+        <p>This is the home section of our website.</p>
+    </section>
+    <section id="about">
+        <h1>About Us</h1>
+        <p>This is the about section of our website.</p>
+    </section>
+    <section id="contact">
+        <h1>Get in Touch</h1>
+        <p>This is the contact section of our website.</p>
+    </section>
+</body>
+</html>

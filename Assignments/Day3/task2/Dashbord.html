@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Management Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="policycss" href="Dashboard.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 sidebar">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link active" href="#policies">Policies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#policy-create">Create Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-md-10 content">
+                <div class="tab-content" id="policies-tab-content">
+                    <div class="tab-pane fade show active" id="policies" role="tabpanel">
+                        <h2>Policies</h2>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Policy ID</th>
+                                    <th>Policy Name</th>
+                                    <th>Policy Type</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="policies-table-body">
+                                <!-- policies will be listed here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="policy-create" role="tabpanel">
+                        <h2>Create Policy</h2>
+                        <form id="policy-create-form">
+                            <div class="form-group">
+                                <label for="policy-name">Policy Name:</label>
+                                <input type="text" class="form-control" id="policy-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="policy-type">Policy Type:</label>
+                                <select class="form-control" id="policy-type" required>
+                                    <option value="">Select Policy Type</option>
+                                    <option value="Life Insurance">Life Insurance</option>
+                                    <option value="Health Insurance">Health Insurance</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Create Policy</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="policy-details-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Policy Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="policy-name-modal"></h2>
+                    <p id="policy-description-modal"></p>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Policy Attribute</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="policy-attributes-modal">
+                            <!-- policy attributes will be listed here -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="Dashboard.js"></script>
+</body>
+</html>
